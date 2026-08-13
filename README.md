@@ -13,10 +13,10 @@
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal no projeto |
 |---|---:|---|---|
-| Paulo Hudson | 22.222.013-9 | Unifpsilva |  |
-| Ana Carolina | {{matrícula}} | {{@usuario}} |
-| Raphael | {{matrícula}} | {{@usuario}} |
-| Nathan | {{matrícula}} | {{@usuario}} |
+| Paulo Hudson | 22.222.013-9 | @Paulo Hudson |{Responsabilidade} |
+| Ana Carolina | 22.123.001-4 | @lazzuriana08 |{Responsabilidade} |
+| Raphael | 22.123.014-7 | @rapha661 |{Responsabilidade} |
+| Nathan | 22.123.028-7 | @NathanGbl |{Responsabilidade} |
 
 ## Resumo do produto
 

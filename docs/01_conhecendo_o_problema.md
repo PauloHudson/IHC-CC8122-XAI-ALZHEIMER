@@ -1,7 +1,7 @@
 # Entrega 1 — Conhecendo o problema
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 13/08/2026  
+**Status:** 🟨 Em andamento
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -12,46 +12,55 @@ Delimitar o produto, os usuários, os benefícios, as funcionalidades e o **cont
 
 | Nome completo | Matrícula | GitHub |
 |---|---:|---|
-| {{...}} | {{...}} | {{...}} |
+| Paulo Hudson | 22.222.013-9 | @Paulo Hudson
+| Ana Carolina | 22.123.001-4 | @lazzuriana08
+| Raphael | 22.123.014-7 | @rapha661
+| Nathan | 22.123.028-7 | @NathanGbl
 
 ## 1.2 Título original do TCC/projeto
 
-{{...}}
+M-XAI: Um framework multimodal de inteligência artificial explicável para diagnóstico da doença de alzheimer
 
 ## 1.3 Orientador(a)
 
-{{...}}
+Murillo Freitas Bouzon
 
 ## 1.4 Está previsto desenvolver interface?
 
-- [ ] Sim
+- [X] Sim
 - [ ] Não
 
-**Justificativa:** {{...}}
+**Justificativa:**
+
+(TEMP) Nosso projeto busca integrar nosso modelo de inteligência artificial com uma interface visual para que o usuário (médico) possa enviar dados do paciente como, imagens de ressonância, tomografia ou dados clínicos.
 
 ## 1.5 Objetivo do trabalho
 
 Descreva o **resultado que o projeto pretende alcançar**, não apenas a tecnologia a utilizar.
 
-{{...}}
+Desenvolver um projeto com interfaces simples, objetivas e com linguagem médica familiar para que o médico forneça dados do paciente como, imagens de ressonância, tomografia ou dados clínicos para que o modelo por trás classifique e justifique o diagnóstico demonstrando os principais fatores levados em consideração.
 
 ## 1.6 Produto final
 
 O que será efetivamente entregue? Ex.: aplicação Web, aplicativo móvel, dashboard, dispositivo interativo, serviço com interface, ferramenta de apoio etc.
 
-{{...}}
+Aplicação web.
 
 ## 1.7 Usuário final
 
 Quem interage diretamente com o produto? Diferencie usuário final, cliente, administrador, especialista e demais stakeholders quando necessário.
 
-{{...}}
+Usuário final: Médico
+Cliente: Hospital
+Administrador: Equipe de TI do hospital
+Especialista: Pesquisadores da área médica
+Demais stakeholders: Rede de hospitais e convênios
 
 ## 1.8 Benefícios para o usuário
 
 | Benefício esperado | Problema/necessidade associada | Para qual usuário |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Facilitar o uso do modelo por trás da interface | A impossibilidade de profissionais da área da saúde de utilizar tecnologias que não são de seu campo de conhecimento | Médico |
 
 ## 1.9 Funcionalidades — visão do usuário
 
@@ -59,7 +68,9 @@ Escreva funcionalidades como capacidades observáveis pelo usuário, não como d
 
 | ID | Funcionalidade | Objetivo do usuário atendido | Prioridade inicial |
 |---|---|---|---|
-| F01 | {{...}} | {{...}} | alta/média/baixa |
+| F01 | Cadastro/login | Poder acessar o sistema | alta |
+| F02 | Upload de arquivos | Poder enviar dados do paciente (imagens/planilhas) | alta |
+| F03 | Visualização de diagnóstico | Obter resultado do diagnóstico com sua justificativa | alta |
 
 ## 1.10 Tecnologias e ferramentas previstas
 

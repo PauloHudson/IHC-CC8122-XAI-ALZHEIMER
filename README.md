@@ -1,27 +1,28 @@
 # Projeto de Interação Humano-Computador (IHC)
 
-> **Template acadêmico para documentação do projeto no GitHub.**  
-> Substitua todo texto entre `{{...}}`, remova exemplos que não se aplicam e mantenha as evidências do projeto dentro do próprio repositório sempre que possível.
-
 ## Identificação
 
-**Título do projeto:** {{TÍTULO DO PROJETO}}  
-**TCC/projeto de origem:** {{TÍTULO ORIGINAL DO TCC, SE HOUVER}}  
-**Orientador(a):** {{NOME}}  
+**Título do projeto:** XAI-ALZHEIMER INTERFACE  
+**TCC/projeto de origem:** M-XAI Net: Um Framework Multimodal de Inteligência Artificial Explicável para Diagnóstico de Doença de Alzheimer  
+**Orientador(a):** Murillo Freitas Bouzon  
 **Disciplina:** Interação Humano-Computador  
-**Instituição:** {{INSTITUIÇÃO}}  
-**Semestre:** {{ANO/SEMESTRE}}
+**Instituição:** FEI  
+**Semestre:** 8° Semestre
 
 ### Equipe
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal no projeto |
 |---|---:|---|---|
-| {{Nome 1}} | {{matrícula}} | {{@usuario}} | {{...}} |
-| {{Nome 2}} | {{matrícula}} | {{@usuario}} | {{...}} |
+| Paulo Hudson | 22.222.013-9 | Unifpsilva |  |
+| Ana Carolina | {{matrícula}} | {{@usuario}} |
+| Raphael | {{matrícula}} | {{@usuario}} |
+| Nathan | {{matrícula}} | {{@usuario}} |
 
 ## Resumo do produto
 
-Escreva **um parágrafo curto e concreto** explicando: qual problema é tratado, para quem, em qual contexto e qual produto/interação será projetado. Evite descrever apenas tecnologia.
+O Problema Central é a opacidade algorítmica (caixa preta) das tecnologias de i.a no diagnóstico precoce da doença de Alzheimer, o que gera desconfiança e impede a adoção dessas ferramentas no contexto clínico e hospitalar de alto risco.
+O Usuário final é o médico especialista ou clínico geral. 
+O Produto para resolver essa dor é o M-XAI Net, um sistema de suporte que opera como um dashboard usando i.a explicável híbrida (HXAI). A interação funciona assim: O médico insere os dados textuais e a ressonância magnética do paciente no software e, em resposta, interage com uma tela unificada que exibe não apenas o diagnóstico, mas a justificativa exata da máquina através dos mapas de calor (GRAD-CAMO) e gráficos de peso (SHAP), permitindo auditar e validar a decisão antes de prescrever o tratamento.
 
 > **Exemplo de estrutura:** “O projeto propõe `{{produto}}` para `{{público}}`, que atualmente enfrenta `{{problema}}`. A solução será utilizada em `{{contexto}}` e permitirá `{{objetivos principais do usuário}}`.”
 

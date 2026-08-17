@@ -50,11 +50,11 @@ Aplicação web.
 
 Quem interage diretamente com o produto? Diferencie usuário final, cliente, administrador, especialista e demais stakeholders quando necessário.
 
-Usuário final: Médico
-Cliente: Hospital
-Administrador: Equipe de TI do hospital
-Especialista: Pesquisadores da área médica
-Demais stakeholders: Rede de hospitais e convênios
+<p>Usuário final: Médico</p>
+<p>Cliente: Hospital</p>
+<p>Administrador: Equipe de TI do hospital</p>
+<p>Especialista: Pesquisadores da área médica</p>
+<p>Demais stakeholders: Rede de hospitais e convênios</p>
 
 ## 1.8 Benefícios para o usuário
 

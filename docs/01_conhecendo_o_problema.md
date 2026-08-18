@@ -1,8 +1,8 @@
 # Entrega 1 — Conhecendo o problema
 
-**Data:** 13/08/2026  
-**Status:** 🟨 Em andamento
-**Responsabilidade:** Desenvolver uma interface para intermediar o uso do modelo de inteligência artificial explicável que visa auxiliar no diagnóstico da doença de alzheimer por profissionais da área da saúde.
+- **Data:** 13/08/2026  
+- **Status:** 🟨 Em andamento
+- **Responsabilidade:** Desenvolver uma interface para intermediar o uso do modelo de inteligência artificial explicável que visa auxiliar no diagnóstico da doença de alzheimer por profissionais da área da saúde.
 
 ## Objetivo da atividade
 
@@ -138,32 +138,117 @@ A interação do usuário poderá ser afetada pelo tempo necessário para consul
 
 ## 1.11 Contexto de uso
 
-Descreva o contexto de forma estruturada.
-
 ### Usuários
 
-Características relevantes para a interação: experiência, conhecimento de domínio, limitações, diversidade, frequência de uso.
+O principal usuário da aplicação será o **médico**, que utilizará o sistema para fornecer dados de um paciente e consultar os resultados produzidos pelo modelo de inteligência artificial.
+
+Características relevantes para a interação:
+
+- O usuário possui conhecimento da área médica.
+- O usuário pode não possuir conhecimento específico sobre inteligência artificial, aprendizado de máquina ou programação.
+- O usuário utilizará termos e conceitos relacionados à sua área profissional.
+- A frequência de utilização poderá variar de acordo com a rotina do profissional e a quantidade de casos analisados.
+- O usuário poderá utilizar a aplicação durante atividades profissionais que exigem atenção simultânea a outras informações clínicas.
+- O sistema deverá apresentar as informações necessárias para cada tarefa sem exigir que o usuário conheça o funcionamento interno do modelo.
+
+A interface deverá considerar principalmente o conhecimento de domínio médico do usuário, evitando exigir conhecimento técnico sobre os métodos utilizados pelo modelo para executar as tarefas previstas.
 
 ### Tarefas e objetivos
 
-Quais tarefas importantes ocorrerão e com que frequência/criticidade?
+As principais tarefas realizadas pelo médico serão:
+
+1. Realizar o login na aplicação.
+2. Iniciar uma nova análise.
+3. Informar os dados necessários para o caso.
+4. Selecionar e enviar os arquivos necessários para a análise.
+5. Aguardar o processamento da solicitação.
+6. Consultar a classificação produzida pelo modelo.
+7. Consultar os fatores utilizados pelo modelo para justificar a classificação.
+8. Utilizar as informações apresentadas como apoio à análise do caso.
+
+A tarefa de consulta do resultado possui **alta criticidade**, pois está relacionada a um contexto de saúde. Por esse motivo, a aplicação deverá apresentar de forma diferenciada o resultado produzido pelo modelo e sua explicação, evitando que informações de processamento sejam confundidas com uma decisão clínica.
+
+O sistema não deverá apresentar o resultado como substituto da avaliação médica. A decisão clínica permanecerá sob responsabilidade do profissional de saúde.
 
 ### Equipamentos e plataforma
 
-Dispositivos, tamanho de tela, entrada/saída, conectividade, restrições de hardware/software.
+A aplicação será desenvolvida para utilização em **navegadores web**, tendo como plataforma principal computadores e notebooks utilizados em ambientes profissionais.
+
+As condições previstas são:
+
+- utilização de teclado e mouse como principais dispositivos de entrada;
+- utilização de monitores com diferentes tamanhos e resoluções;
+- necessidade de apresentação de textos, formulários, resultados e imagens médicas;
+- necessidade de conexão com a internet para comunicação com o backend e o banco de dados;
+- dependência da disponibilidade dos serviços utilizados pela aplicação;
+- possibilidade de variação no tempo de resposta conforme a qualidade da conexão e o processamento das solicitações.
+
+A interface deverá ser responsiva para diferentes tamanhos de tela, mas o cenário prioritário será a utilização em computadores e notebooks, considerando o contexto profissional e a necessidade de visualização de informações médicas.
 
 ### Ambiente físico
 
-Iluminação, ruído, mobilidade, privacidade, possibilidade de uso com uma mão, tempo disponível etc.
+A aplicação será utilizada principalmente em ambientes profissionais, como:
+
+- hospitais;
+- clínicas;
+- consultórios;
+- centros de pesquisa.
+
+As condições do ambiente podem variar em relação à iluminação e ao nível de ruído. Por isso, a apresentação das informações deverá considerar:
+
+- legibilidade dos textos;
+- contraste suficiente entre elementos;
+- diferenciação visual entre campos, resultados e informações auxiliares;
+- organização das informações de acordo com as etapas da tarefa.
+
+O médico poderá utilizar a aplicação durante sua rotina profissional, portanto as tarefas principais deverão ser realizadas sem exigir etapas desnecessárias.
+
+A privacidade também é um fator relevante, pois a aplicação poderá lidar com informações relacionadas a pacientes. O acesso aos dados deverá ser restrito a usuários autorizados.
 
 ### Ambiente social e organizacional
 
-Uso individual/coletivo, presença de terceiros, políticas, papéis, responsabilidades, consequências de erro.
+A utilização da aplicação será predominantemente individual, com o médico realizando as tarefas diretamente no sistema.
+
+Entretanto, a aplicação estará inserida em um ambiente organizacional que poderá envolver diferentes papéis:
+
+- **Médico:** realiza a análise utilizando os dados e os resultados fornecidos pela aplicação.
+- **Equipe de TI:** administra aspectos técnicos e de acesso ao sistema.
+- **Pesquisadores da área médica:** podem utilizar os resultados para avaliação e pesquisa.
+- **Hospital ou instituição:** define as condições organizacionais para utilização da solução.
+
+A consequência de um erro de interpretação é relevante devido ao contexto de saúde. Portanto:
+
+- o resultado do modelo deverá ser apresentado de forma claramente identificável;
+- a explicação deverá estar associada ao resultado correspondente;
+- informações técnicas do sistema não deverão ser apresentadas de maneira que possam ser confundidas com uma conclusão médica;
+- a aplicação deverá deixar explícito que o resultado é uma ferramenta de apoio à análise profissional;
+- a decisão clínica final permanecerá sob responsabilidade do médico.
 
 ## Delimitação inicial
 
-**Dentro do escopo:** {{...}}  
-**Fora do escopo:** {{...}}
+### Dentro do escopo
+
+- Desenvolvimento de uma aplicação web para intermediar a utilização do modelo de inteligência artificial.
+- Desenvolvimento das telas necessárias para autenticação do usuário.
+- Desenvolvimento do fluxo de inserção e envio dos dados para análise.
+- Envio de imagens médicas e dados clínicos compatíveis com as entradas previstas pelo modelo.
+- Apresentação da classificação produzida pelo modelo.
+- Apresentação dos principais fatores considerados pelo modelo na classificação.
+- Armazenamento dos dados necessários para o funcionamento da aplicação.
+- Organização das informações considerando o fluxo de trabalho do médico.
+- Desenvolvimento da interface para utilização prioritária em computadores e notebooks.
+
+### Fora do escopo
+
+- Substituição do médico ou de outro profissional de saúde na tomada de decisão.
+- Realização autônoma de diagnóstico médico definitivo.
+- Desenvolvimento de um novo modelo de inteligência artificial como parte da interface.
+- Realização ou processamento físico de exames médicos.
+- Integração inicial com equipamentos hospitalares.
+- Integração inicial com sistemas externos de prontuário eletrônico.
+- Desenvolvimento de uma versão específica para dispositivos móveis.
+- Utilização da aplicação por pacientes como público principal.
+- Definição de condutas ou tratamentos médicos a partir do resultado produzido pelo modelo.
 
 ## Síntese da entrega
 
@@ -171,10 +256,10 @@ O projeto terá como foco uma aplicação web destinada principalmente a médico
 
 ## Checklist
 
-- [ ] O problema está descrito sem confundir problema com solução.
+- [x] O problema está descrito sem confundir problema com solução.
 - [x] Usuário final está identificado de forma específica.
-- [ ] Funcionalidades estão na visão do usuário.
-- [ ] Benefícios estão ligados a necessidades reais/hipóteses explícitas.
-- [ ] Contexto inclui usuários, tarefas, plataforma e ambientes físico/social.
-- [ ] Escopo e limites estão claros.
+- [x] Funcionalidades estão na visão do usuário.
+- [x] Benefícios estão ligados a necessidades reais/hipóteses explícitas.
+- [x] Contexto inclui usuários, tarefas, plataforma e ambientes físico/social.
+- [x] Escopo e limites estão claros.
 - [ ] A matriz de rastreabilidade foi iniciada.

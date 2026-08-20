@@ -74,7 +74,7 @@ Quem interage diretamente com o produto? Diferencie usuário final, cliente, adm
 
 | Benefício esperado | Problema/necessidade associada | Para qual usuário |
 |---|---|---|
-| Facilitar o uso do modelo por trás da interface | A impossibilidade de profissionais da área da saúde de utilizar tecnologias que não são de seu campo de conhecimento | Médico |
+| Facilitar o uso do modelo por trás da interface | A impossibilidade de profissionais da área da saúde de utilizar tecnologias que não são de seu campo de conhecimento | Profissionais da área da saúde |
 
 ## 1.9 Funcionalidades — visão do usuário
 
@@ -85,6 +85,7 @@ Escreva funcionalidades como capacidades observáveis pelo usuário, não como d
 | F01 | Cadastro/login | Poder acessar o sistema | alta |
 | F02 | Upload de arquivos | Poder enviar dados do paciente (imagens/planilhas) | alta |
 | F03 | Visualização de diagnóstico | Obter resultado do diagnóstico com sua justificativa | alta |
+| F04 | Acompanhamento das solicitações | Acompanhar as solicitações de classificações feitas | Média |
 
 ## 1.10 Tecnologias e ferramentas previstas
 
@@ -92,7 +93,7 @@ Escreva funcionalidades como capacidades observáveis pelo usuário, não como d
 |---|---|---|---|
 | Interface | **React** | Reutilização e manutenção da interface web. | Responsividade e atualização dos elementos durante as tarefas. |
 | Backend | **Node.js** | Desenvolvimento do servidor e criação de APIs utilizando JavaScript. | Processamento das solicitações e comunicação entre as camadas. |
-| Banco de dados | **Neon (PostgreSQL)** | Banco PostgreSQL gerenciado em nuvem e integrado à aplicação. | O tempo de acesso aos dados depende da conexão e da disponibilidade do serviço. |
+| Banco de dados | **Banco de dados relacional** | Escolhido devido a sua estruturação de armazenamento dos dados da aplicação. | Impacta no tempo de acesso aos dados (pode variar conforme a conexão do usuário) e a disponibilidade do serviço utilizado. |
 
 ### Interface — React
 
@@ -123,18 +124,16 @@ Entre suas responsabilidades estarão:
 
 Para o usuário, o desempenho do backend poderá influenciar diretamente o tempo necessário para concluir tarefas como envio de arquivos e consulta dos resultados. Esse tempo poderá variar conforme a conexão de rede e o processamento da solicitação.
 
-### Banco de dados — Neon (PostgreSQL)
+### Banco de dados relacional
 
-O **Neon**, utilizando **PostgreSQL**, será utilizado para o armazenamento estruturado dos dados necessários ao funcionamento da aplicação.
+Será utilizado um **banco de dados relacional** para o armazenamento estruturado das informações necessárias ao funcionamento da aplicação.
 
-A escolha considera:
+A escolha por um banco de dados relacional considera a necessidade de:
 
-- Utilização do PostgreSQL como sistema de gerenciamento de banco de dados;
-- Gerenciamento do banco em ambiente de nuvem;
-- Possibilidade de integração com o backend;
-- Armazenamento estruturado das informações utilizadas pela aplicação.
-
-A interação do usuário poderá ser afetada pelo tempo necessário para consultar ou armazenar informações. Como o banco estará hospedado em nuvem, operações que dependem dele estarão sujeitas à qualidade da conexão de rede e à disponibilidade do serviço.
+- armazenar informações estruturadas;
+- estabelecer relações entre diferentes conjuntos de dados;
+- realizar consultas e operações sobre os dados da aplicação;
+- garantir organização e consistência das informações.
 
 ## 1.11 Contexto de uso
 
@@ -178,7 +177,7 @@ As condições previstas são:
 
 - utilização de teclado e mouse como principais dispositivos de entrada;
 - utilização de monitores com diferentes tamanhos e resoluções;
-- necessidade de apresentação de textos, formulários, resultados e imagens médicas;
+- necessidade de apresentação de textos, resultados e imagens médicas;
 - necessidade de conexão com a internet para comunicação com o backend e o banco de dados;
 - dependência da disponibilidade dos serviços utilizados pela aplicação;
 - possibilidade de variação no tempo de resposta conforme a qualidade da conexão e o processamento das solicitações.
@@ -193,17 +192,6 @@ A aplicação será utilizada principalmente em ambientes profissionais, como:
 - clínicas;
 - consultórios;
 - centros de pesquisa.
-
-As condições do ambiente podem variar em relação à iluminação e ao nível de ruído. Por isso, a apresentação das informações deverá considerar:
-
-- legibilidade dos textos;
-- contraste suficiente entre elementos;
-- diferenciação visual entre campos, resultados e informações auxiliares;
-- organização das informações de acordo com as etapas da tarefa.
-
-O médico poderá utilizar a aplicação durante sua rotina profissional, portanto as tarefas principais deverão ser realizadas sem exigir etapas desnecessárias.
-
-A privacidade também é um fator relevante, pois a aplicação poderá lidar com informações relacionadas a pacientes. O acesso aos dados deverá ser restrito a usuários autorizados.
 
 ### Ambiente social e organizacional
 
